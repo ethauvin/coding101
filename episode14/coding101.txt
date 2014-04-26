@@ -1,0 +1,14 @@
+January 23, 2014	Coding 01100101	In the first episode of Coding 101, we learn how to convert binary into decimal, then break it down into machine code.
+January 30, 2014	while (c101 > awesome)	Today we learn all about variables, while loops, and converting integers to binary.
+February 6, 2014	Do While Conditioner	This week we are taking a look at Xamarin Studio on Mac OSX, While Loops, For Loops, and Relational Operators.
+February 13, 2014	If Coding, Then Watch This	This week we are reviewing For Loops, and checking out If (then) Else Statements.
+February 20, 2014	Somewhat Function(al)	This week we are reviewing If (then) Else Statements and Functions.
+February 27, 2014	Coding101(Padre, Snubs)	This week we are talking about Object Oriented Programming.
+March 06, 2014	Runtime, Funtime	This week we are reviewing function returns, checking out your viewer submissions, and we're getting graphical!
+March 13, 2014	Farewell to C#	This week we are reviewing objects, checking out your viewer submissions, and getting into classes and methods!
+March 20, 2014	ISS-Above with Python	This week we chat with the inventor of ISS-Above: a device that lights up whenever the International Space Station is nearby.
+March 27, 2014	Randal Schwartz's "Perls of Wisdom"	This week we chat with Randal Schwartz, host of "FLOSS Weekly" and co-author of books such as "Programming Perl" and "Learning Perl".
+April 3, 2014	Python: Getting Started	This week we are introducing our newest module, Python with Code Warrior Dale Chase!
+April 10, 2014	Lists[Python]	This week we check out your viewer submissions and we continue in Python with Lists.
+April 17, 2014	Sanitize')DROP TABLE Python;	Your Python list example, we'll explain the Heartbleed bug with jelly beans, and a While Loop.
+April 24, 2014	Thrown a For Loop	We learn about for loops, if then statements, and get modded before Dale Chase gives us the lowdown on using external data.
