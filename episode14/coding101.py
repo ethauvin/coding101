@@ -4,7 +4,7 @@
 # 
 # Written by Erik C. Thauvin (erik@thauvin.net)
 # http://erik.thauvin.net/
-# http://github.com/ethauvin/coding101/episode14
+# http://github.com/ethauvin/coding101/
 # April 26, 2014
 
 import textwrap
