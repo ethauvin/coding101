@@ -68,8 +68,10 @@ while run:
         # Print the loop count & title
         # The count is converted into a str, and right justified
         print '  {0}. {1}'.format(str(count).rjust(2), episodeInfo[0])
-        # Increment the loop count, same as: count = count + 1
-        count += 1
+        # Increment the loop count, unless we're on the last episode
+        if (count + 1) < len(episodes):
+            # Same as: count = count + 1
+            count += 1
 
     print
 
