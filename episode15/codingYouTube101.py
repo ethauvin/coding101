@@ -50,6 +50,9 @@ for video in videos['items']:
             video['snippet']['title'] + '\t' + video['snippet']['description'] + '\t'
             + 'http://youtube.com/watch?v=' + video['id']['videoId'])
 
+# Reverse sort the episodes list
+episodes.reverse()
+
 # Let's go. The program will execute until run = False
 run = True
 while run:
@@ -60,18 +63,18 @@ while run:
     # Loop through and print the episodes list.
     count = 0
     for episode in episodes:
-        # Increment the loop count, same as: count = count + 1
-        count += 1
         # Split the episode info using tab as the delimiter
         episodeInfo = episode.split('\t')
         # Print the loop count & title
         # The count is converted into a str, and right justified
         print '  {0}. {1}'.format(str(count).rjust(2), episodeInfo[0])
+        # Increment the loop count, same as: count = count + 1
+        count += 1
 
     print
 
     # Ask for the episode number
-    choice = raw_input('Enter 1-' + str(count) + ' (or ENTER to quit): ')
+    choice = raw_input('Enter 0-' + str(count) + ' (or ENTER to quit): ')
 
     # Did you press enter?
     if not choice:
@@ -84,13 +87,13 @@ while run:
         selection = int(choice)
 
         # It must also be between 1 and the total number of episodes
-        # Could be written as: selection >= 1 and selection <= count
-        if 1 <= selection <= count:
+        # Could be written as: selection >= 0 and selection <= count
+        if 0 <= selection <= count:
             print
             print
             print '=============================================================================='
-            # Split the selected episode info using tab as the delimiter, the list is zero-based
-            episodeInfo = episodes[selection - 1].split('\t')
+            # Split the selected episode info using tab as the delimiter
+            episodeInfo = episodes[selection].split('\t')
             # Print the episode title
             print episodeInfo[0]
             print
