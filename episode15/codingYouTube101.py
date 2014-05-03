@@ -88,7 +88,7 @@ while run:
         # Convert the selection to an integer
         selection = int(choice)
 
-        # It must also be between 1 and the total number of episodes
+        # It must also be between 0 and the total number of episodes
         # Could be written as: selection >= 0 and selection <= count
         if 0 <= selection <= count:
             print
