@@ -8,6 +8,7 @@
 # May 9, 2014
 
 # Import the randrange function
+# See: http://www.tutorialspoint.com/python/number_randrange.htm
 from random import randrange
 
 # The maximum number of random numbers to generate
@@ -31,6 +32,7 @@ while len(randomNumbers) < max:
     # Append the random number to our list
     randomNumbers.append(randint)
     # Print the random number, converted to a string and right justified
+    # See: http://www.tutorialspoint.com/python/string_rjust.htm
     # The comma at the end prevents a new line from being printed
     print '  ' + str(randint).rjust(2),
     # Increment the print counter, same as: printCounter = printerCounter + 1
