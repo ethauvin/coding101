@@ -1,0 +1,11 @@
+Shannon Morse,Yes
+Keith Coffman,Yes
+Aunt Morse,No
+Cranky Hippo,Yes
+Daddy Morse,Not Replied
+Mommy Coffman,Yes
+Mommy Morse,Yes
+Nana Morse,Yes
+Officiant Tom,Yes
+Papa Coffman,Yes
+Sister Kate,No

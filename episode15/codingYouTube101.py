@@ -15,7 +15,7 @@ import urllib2
 import json
 
 # Your YouTube API key from https://developers.google.com/youtube/registering_an_application
-youTubeApiKey = ''
+youtube_api_key = ''
 
 # Print opening title
 print '============================= CODING YOUTUBE 101 ============================='
@@ -23,19 +23,19 @@ print '============================= CODING YOUTUBE 101 ========================
 print
 
 # Ask for the API key if none is specified above
-while not youTubeApiKey.isalnum():
-    youTubeApiKey = raw_input('Enter your YouTube API Key: ')
+while not youtube_api_key.isalnum():
+    youtube_api_key = raw_input('Enter your YouTube API Key: ')
     # Did you press enter?
-    if not youTubeApiKey:
+    if not youtube_api_key:
         # Stop the program execution. Bye-Bye!
         exit(0)
 
 # Search for Coding 101 videos using the channel ID and our API key
-youTubeResponse = urllib2.urlopen(
-    'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCSxIcr2rZZcoU7rSGXaEQag&maxResults=20&order=date&key=' + youTubeApiKey)
+youtube_response = urllib2.urlopen(
+    'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCSxIcr2rZZcoU7rSGXaEQag&maxResults=20&order=date&key=' + youtube_api_key)
 
 # Load the list of videos returned by YouTube
-videos = json.load(youTubeResponse)
+videos = json.load(youtube_response)
 
 # Declare the episodes list
 episodes = []
@@ -64,10 +64,10 @@ while run:
     count = 0
     for episode in episodes:
         # Split the episode info using tab as the delimiter
-        episodeInfo = episode.split('\t')
+        episode_info = episode.split('\t')
         # Print the loop count & title
         # The count is converted into a str, and right justified
-        print '  {0}. {1}'.format(str(count).rjust(2), episodeInfo[0])
+        print '  {0}. {1}'.format(str(count).rjust(2), episode_info[0])
         # Increment the loop count, unless we're on the last episode
         if (count + 1) < len(episodes):
             # Same as: count = count + 1
@@ -95,15 +95,15 @@ while run:
             print
             print '=============================================================================='
             # Split the selected episode info using tab as the delimiter
-            episodeInfo = episodes[selection].split('\t')
+            episode_info = episodes[selection].split('\t')
             # Print the episode title
-            print episodeInfo[0]
+            print episode_info[0]
             print
             # Print the description, using textwrap to make it look pretty
-            print textwrap.fill(episodeInfo[1], width=76)
+            print textwrap.fill(episode_info[1], width=76)
             print
             # Print the URL
-            print episodeInfo[2]
+            print episode_info[2]
             print '=============================================================================='
             print
             raw_input('Press ENTER to continue...')

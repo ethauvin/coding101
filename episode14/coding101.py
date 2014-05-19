@@ -13,11 +13,11 @@ import textwrap
 print '================================ CODING 101 ================================'
 
 # Open the file
-episodeFile = open('coding101.txt', 'r')
+episode_file = open('coding101.txt', 'r')
 # Read the lines into a list
-linesFromFile = episodeFile.readlines()
+lines_from_files = episode_file.readlines()
 # Close the file
-episodeFile.close()
+episode_file.close()
 
 # Let's go. The program will execute until run = False
 run = True
@@ -30,7 +30,7 @@ while run:
 
     # Loop through the episodes list.
     count = 0
-    for line in linesFromFile:
+    for line in lines_from_files:
         # Increment the episode number
         count += 1
         # Split the line using tab as the delimiter
@@ -62,7 +62,7 @@ while run:
             print
             print '============================================================================'
             # Get and split the line for the episode, the list is zero-based
-            episode = linesFromFile[selection - 1].split('\t')
+            episode = lines_from_files[selection - 1].split('\t')
             # Print the episode title and aired date
             print 'Episode #' + choice + ": \"" + episode[1] + '" aired on ' + episode[0]
             print
